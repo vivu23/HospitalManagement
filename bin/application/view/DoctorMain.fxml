@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.24018126888217523" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="664.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.DoctorMainController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="732.0" style="-fx-background-color: #F0F8FF;">
+         <children>
+            <Button layoutX="578.0" layoutY="14.0" mnemonicParsing="false" onAction="#LogoutButtonClicked" prefHeight="44.0" prefWidth="140.0" text="Sign Out">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="time" layoutX="275.0" layoutY="37.0" text="mm:dd:yyyy" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="173.0" layoutY="91.0" text="Hello, Someone!!" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="32.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="429.0" prefWidth="730.0" style="-fx-background-color: A9A9A9;">
+         <children>
+            <Button layoutX="233.0" layoutY="419.0" mnemonicParsing="false" onAction="#changePWClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 100;" text="Change Password" />
+            <Button layoutX="233.0" layoutY="24.0" mnemonicParsing="false" onAction="#checkOperationClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-color: BLACK; -fx-border-width: 2; -fx-border-radius: 100;" text="Check My Operation " />
+            <Button layoutX="233.0" layoutY="104.0" mnemonicParsing="false" onAction="#AddDeleteOperationClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="Add/Delete Operation" />
+            <Button layoutX="233.0" layoutY="183.0" mnemonicParsing="false" onAction="#checkNumOperationClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="Check Number of Operations" />
+            <Button layoutX="233.0" layoutY="261.0" mnemonicParsing="false" onAction="#checkNumofStaffClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="Check Number of Staff" />
+            <Button layoutX="233.0" layoutY="339.0" mnemonicParsing="false" onAction="#UpdatingStaffClicked" prefHeight="53.0" prefWidth="266.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="Updating Number of Staff" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

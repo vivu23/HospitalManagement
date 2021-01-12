@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.6631130063965884" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="471.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.OptionController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="290.0" prefWidth="809.0" style="-fx-background-color: F0F8FF;">
+         <children>
+            <TextField fx:id="num" layoutX="261.0" layoutY="173.0" prefHeight="49.0" prefWidth="260.0" promptText="Please enter a number" />
+            <Label fx:id="time" layoutX="586.0" layoutY="10.0" text="mm:dd:yyyy" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="110.0" text="Search for operations that have a number of staff greater than " textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutY="-1.0" mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/return-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="568.0" layoutY="184.0" prefHeight="28.0" prefWidth="84.0" text="people" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="126.0" layoutY="66.0" text="This is a errror message" textFill="ALICEBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="657.0" style="-fx-background-color: A9A9A9;">
+         <children>
+            <Button layoutX="354.0" layoutY="52.0" mnemonicParsing="false" onAction="#ButtonClicked" prefHeight="49.0" prefWidth="127.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;" text="Search" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="19.0" />
+               </font></Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.67" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="534.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="253.0" prefWidth="878.0" style="-fx-background-color: #F0F8FF;">
+         <children>
+            <TextField fx:id="userID" layoutX="213.0" layoutY="150.0" prefHeight="51.0" prefWidth="455.0" />
+            <PasswordField fx:id="password" layoutX="212.0" layoutY="248.0" prefHeight="51.0" prefWidth="455.0" />
+            <Label layoutX="362.0" layoutY="14.0" text="Log in" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="108.0" text="Username" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="208.0" prefHeight="40.0" prefWidth="154.0" text="Password" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="29.0" />
+               </font>
+            </Label>
+            <Button layoutX="-7.0" layoutY="2.0" mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: none;" AnchorPane.rightAnchor="826.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/return-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="message" layoutX="269.0" layoutY="73.0" text="Please check your login information again !" textFill="ALICEBLUE" />
+         </children>
+      </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="579.0" prefWidth="864.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Button layoutX="358.0" layoutY="30.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="61.0" prefWidth="163.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100; -fx-border-width: 2;" text="Log In" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="26.0" />
+               </font>
+            </Button>
+            <Button layoutX="317.0" layoutY="107.0" mnemonicParsing="false" onAction="#signUpbuttonClicked" prefHeight="50.0" prefWidth="245.0" style="-fx-background-color: none;" text="Dont have account?">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

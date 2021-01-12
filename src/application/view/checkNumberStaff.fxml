@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="627.0" style="-fx-background-color: A9A9A9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.checkNumberStaffController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fx:id="returnButtonClicked" fitHeight="37.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/return-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="view" layoutY="57.0" prefHeight="348.0" prefWidth="627.0">
+        <columns>
+          <TableColumn fx:id="operationID" prefWidth="146.0" style="-fx-background-color: F0F8FF;" text="Operation id" />
+          <TableColumn fx:id="operationName" prefWidth="290.0" style="-fx-background-color: F0F8FF;" text="Operation name" />
+            <TableColumn fx:id="num" prefWidth="184.0" style="-fx-background-color: F0F8FF;" text="Number of Staff" />
+        </columns>
+      </TableView>
+      <Label fx:id="time" layoutX="517.0" layoutY="14.0" text="Label" textFill="#1c67d7">
+         <font>
+            <Font name="OCR A Extended" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="250.0" layoutY="413.0" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="54.0" prefWidth="127.0" style="-fx-background-radius: 100; -fx-border-width: 2; -fx-border-color: black; -fx-border-radius: 100;" text="Search" textFill="#1c67d7">
+         <font>
+            <Font name="OCR A Extended" size="21.0" />
+         </font></Button>
+   </children>
+</Pane>

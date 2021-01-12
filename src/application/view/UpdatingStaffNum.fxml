@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.7202643171806168" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="490.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UpdatingStaffNumController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #F0F8FF;">
+         <children>
+            <TextField fx:id="operationName" layoutX="309.0" layoutY="173.0" prefHeight="39.0" prefWidth="276.0" promptText="Operation name" />
+            <TextField fx:id="newNumofStaff" layoutX="309.0" layoutY="262.0" prefHeight="39.0" prefWidth="276.0" promptText="Number of Staff" />
+            <Label fx:id="time" layoutX="500.0" layoutY="17.0" text="mm:dd:yyyy" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="66.0" layoutY="71.0" text="Please enter a new Number of Staff" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="26.0" />
+               </font>
+            </Label>
+            <Button layoutY="5.0" mnemonicParsing="false" onAction="#returnButtonClicked" prefHeight="53.0" prefWidth="53.0" style="-fx-background-color: none;">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/return-button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="50.0" layoutY="181.0" text="Operation name" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="267.0" prefHeight="28.0" prefWidth="237.0" text="New number of Staff" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="message" layoutX="76.0" layoutY="117.0" text="This is for exception message" textFill="ALICEBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: A9A9A9;">
+         <children>
+            <Button layoutX="277.0" layoutY="43.0" mnemonicParsing="false" onAction="#ButtonClicked" prefHeight="46.0" prefWidth="113.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100; -fx-border-width: 2;" text="Submit" textFill="#1c67d7">
+               <font>
+                  <Font name="OCR A Extended" size="21.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="579.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #F0F8FF;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="204.0" layoutX="331.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/medicine.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="257.0" text="Welcome to Hospital Management!" textFill="STEELBLUE">
+               <font>
+                  <Font name="OCR A Extended" size="40.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <Button layoutX="100.0" layoutY="69.0" mnemonicParsing="false" onAction="#DButtonClicked" prefHeight="65.0" prefWidth="215.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="I'M A DOCTOR" textFill="#255780">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Button>
+            <Button layoutX="561.0" layoutY="69.0" mnemonicParsing="false" onAction="#NButtonClicked" prefHeight="65.0" prefWidth="215.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 100;" text="I'M A NURSE" textFill="#255780">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

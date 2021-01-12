@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="681.0" style="-fx-background-color: A9A9A9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.checkMyOperationController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#returnButtonClicked" prefHeight="35.0" prefWidth="45.0" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/return-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="view" layoutX="1.0" layoutY="57.0" prefHeight="353.0" prefWidth="681.0">
+        <columns>
+          <TableColumn fx:id="patientName" prefWidth="184.0" style="-fx-background-color: #F0F8FF;" text="patient's name" />
+          <TableColumn fx:id="OpID" prefWidth="229.0" style="-fx-background-color: #F0F8FF;" text="Operation id" />
+            <TableColumn fx:id="OpName" prefWidth="267.0" style="-fx-background-color: #F0F8FF;" text="Operation name" />
+        </columns>
+      </TableView>
+      <Label fx:id="time" layoutX="512.0" layoutY="3.0" prefHeight="48.0" prefWidth="169.0" text="mm:dd:yyyy" textFill="#1c67d7">
+         <font>
+            <Font name="OCR A Extended" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="283.0" layoutY="423.0" mnemonicParsing="false" onAction="#searchButtonClicked" prefHeight="48.0" prefWidth="118.0" style="-fx-background-radius: 100; -fx-border-color: BLACK; -fx-border-width: 2; -fx-border-radius: 100;" text="Search">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
+   </children>
+</Pane>

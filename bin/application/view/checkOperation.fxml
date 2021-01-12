@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="583.0" prefWidth="955.0" style="-fx-background-color: A9A9A9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AddOperationController">
+   <children>
+      <TableView fx:id="view" layoutY="42.0" prefHeight="416.0" prefWidth="955.0">
+        <columns>
+          <TableColumn fx:id="opID" prefWidth="173.0" style="-fx-background-color: #F0F8FF;" text="Operation id" />
+          <TableColumn fx:id="opName" prefWidth="163.0" style="-fx-background-color: #F0F8FF;" text="Operation name" />
+            <TableColumn fx:id="doc" prefWidth="155.0" style="-fx-background-color: #F0F8FF;" text="doctor id" />
+            <TableColumn fx:id="patientid" prefWidth="115.0" style="-fx-background-color: #F0F8FF;" text="patient id" />
+            <TableColumn fx:id="date" prefWidth="168.0" style="-fx-background-color: #F0F8FF;" text="schedule date" />
+            <TableColumn fx:id="numofstaff" prefWidth="185.0" style="-fx-background-color: #F0F8FF;" text="number of staff" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idInput" layoutX="32.0" layoutY="471.0" prefHeight="39.0" prefWidth="178.0" promptText="Operation id" />
+      <TextField fx:id="nameInput" layoutX="249.0" layoutY="471.0" prefHeight="39.0" prefWidth="178.0" promptText="Operation Name" />
+      <TextField fx:id="docInput" layoutX="461.0" layoutY="471.0" prefHeight="39.0" prefWidth="178.0" promptText="Doctor id" />
+      <TextField fx:id="patientInput" layoutX="32.0" layoutY="524.0" prefHeight="39.0" prefWidth="178.0" promptText="Patient id" />
+      <TextField fx:id="StaffnumInput" layoutX="249.0" layoutY="524.0" prefHeight="39.0" prefWidth="178.0" promptText="number of staff" />
+      <DatePicker fx:id="DateInput" layoutX="461.0" layoutY="524.0" prefHeight="39.0" prefWidth="178.0" promptText="Schedule date" />
+      <Button layoutX="665.0" layoutY="490.0" mnemonicParsing="false" onAction="#AddButtonClicked" prefHeight="48.0" prefWidth="119.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-border-width: 2;" text="Add">
+         <font>
+            <Font name="OCR A Extended" size="22.0" />
+         </font></Button>
+      <Button layoutX="806.0" layoutY="490.0" mnemonicParsing="false" onAction="#DeleteButtonClicked" prefHeight="48.0" prefWidth="119.0" style="-fx-background-radius: 100; -fx-border-color: black; -fx-border-radius: 100; -fx-border-width: 2;" text="Delete">
+         <font>
+            <Font name="OCR A Extended" size="22.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/return-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="time" layoutX="753.0" layoutY="5.0" text="mm:dd:yyyy" textFill="#1c67d7">
+         <font>
+            <Font name="OCR A Extended" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" layoutX="121.0" layoutY="5.0" text="mm:dd:yyyy" textFill="DARKGRAY">
+         <font>
+            <Font name="OCR A Extended" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="754.0" style="-fx-background-color: A9A9A9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.checkPatientController">
+   <children>
+      <TableView fx:id="view" layoutY="43.0" prefHeight="411.0" prefWidth="754.0" style="-fx-background-color: F0F8FF;">
+        <columns>
+          <TableColumn fx:id="patientID" prefWidth="190.0" style="-fx-background-color: #F0F8FF;" text="Patient id" />
+            <TableColumn fx:id="patientName" prefWidth="241.0" style="-fx-background-color: #F0F8FF;" text="Full name" />
+            <TableColumn fx:id="diagnose" prefWidth="315.0" style="-fx-background-color: #F0F8FF;" text="Diagnose" />
+        </columns>
+      </TableView>
+      <TextField fx:id="idInput" layoutX="14.0" layoutY="470.0" prefHeight="39.0" prefWidth="157.0" promptText="Patient id">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="nameInput" layoutX="188.0" layoutY="470.0" prefHeight="39.0" prefWidth="164.0" promptText="Patient name">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></TextField>
+      <Button layoutX="551.0" layoutY="470.0" mnemonicParsing="false" onAction="#AddButtonClicked" prefHeight="39.0" prefWidth="84.0" style="-fx-background-radius: 100; -fx-border-color: BLACK; -fx-border-width: 2; -fx-border-radius: 100;" text="Add" textFill="STEELBLUE">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
+      <Button layoutX="644.0" layoutY="468.0" mnemonicParsing="false" onAction="#DeleteButtonClicked" prefHeight="39.0" prefWidth="95.0" style="-fx-background-radius: 100; -fx-border-width: 2; -fx-border-color: BLACK; -fx-border-radius: 100;" text="Delete" textFill="STEELBLUE">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#returnButtonClicked" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/return-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="time" layoutX="582.0" layoutY="7.0" text="mm:dd:yyyy" textFill="#1c67d7">
+         <font>
+            <Font name="OCR A Extended" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="diagnoseInput" layoutX="371.0" layoutY="470.0" prefHeight="39.0" prefWidth="170.0" promptText="Diagnose">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></TextField>
+      <Label fx:id="message" layoutX="93.0" layoutY="7.0" text="aaaa" textFill="DARKGRAY">
+         <font>
+            <Font name="OCR A Extended" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
